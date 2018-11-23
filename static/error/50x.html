@@ -6,6 +6,21 @@
 
     <body>
         <h1>MWA Proxy Error</h1>
-        <p>We are sorry...</p>
+        <p>Oops, something went wrong with your request. Please try again a bit later.</p>
+        <p>If the problem persists, please make note of the following information:
+          <ul>
+            <li>What is the URL of the service you were attempting to access?</li>
+            <li>What is the name of the University or organisation login server you where attempting to use?</li>
+            <li>This time stamp: <span id="time_stamp">[sorry your browser does not support javascript!]</span></li>
+          </ul>
+        </p>
+        <p>And then please email the <a href="mailto:registry_admin@mwatelescope.org">administrator</a> with the information.</p>
+        <p>Thank you for your patience!</p>
+        <br/>
+        The MWA Collaboration Team
+        <script>
+          var dt = new Date();
+          document.getElementById("time_stamp").innerHTML = dt.toUTCString();
+        </script>
     </body>
 </html>
